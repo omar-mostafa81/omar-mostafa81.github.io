@@ -14,9 +14,9 @@ abstract: >
   frontier points while accounting for the robot's safety margins from obstacles. The method was validated on the
   Diablo robot platform in complex indoor environments.
 images:
-  - src: /assets/images/publications/med_frontier.jpg
+  - src: /assets/images/publications/med_frontier.png
     caption: "Frontier-based exploration diagram"
-  - src: /assets/images/publications/med_result.jpg
+  - src: /assets/images/publications/med_result.png
     caption: "Explored apartment map"
 ---
 

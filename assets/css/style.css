@@ -178,6 +178,7 @@ p { color: var(--ink-mid); }
   color: var(--ink-mid);
   max-width: 580px;
   margin-bottom: 24px;
+  text-align: justify;
 }
 
 .hero-links {

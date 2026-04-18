@@ -16,11 +16,11 @@ abstract: >
   regions, generating OctoMaps of complex long indoor environments. The method was validated in real apartment
   environments using fused RGB-D and LiDAR data.
 images:
-  - src: /assets/images/publications/slam_diablo_robot.jpg
+  - src: /assets/images/publications/slam_diablo_robot.png
     caption: "Diablo robot with 3D LiDAR and RealSense D435i"
-  - src: /assets/images/publications/slam_octomap.jpg
+  - src: /assets/images/publications/slam_octomap.png
     caption: "OctoMap generated from real apartment exploration"
-  - src: /assets/images/publications/slam_planner.jpg
+  - src: /assets/images/publications/slam_planner.png
     caption: "Medial-Axis motion planner visualization"
 ---
 
