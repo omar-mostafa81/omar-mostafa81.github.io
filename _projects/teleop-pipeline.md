@@ -3,7 +3,6 @@ title: "Unified Teleoperation Pipeline"
 subtitle: "Data Collection for Multiple Robot Embodiments · Turing Robotics"
 short_desc: "A unified teleoperation framework supporting VR, leader arm, and keyboard inputs across multiple robot platforms."
 order: 3
-icon: "🕹️"
 thumb: /assets/images/projects/teleop_thumb.jpg
 tags:
   - Teleoperation

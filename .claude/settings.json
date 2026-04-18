@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "additionalDirectories": [
+      "/home/omar/projects/personal-website/{_data,_publications,_projects,assets"
+    ],
+    "allow": [
+      "Bash(git -C /home/omar/projects/personal-website status --short)",
+      "Bash(git -C /home/omar/projects/personal-website remote -v)"
+    ]
+  }
+}

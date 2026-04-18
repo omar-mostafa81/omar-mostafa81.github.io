@@ -3,7 +3,6 @@ title: "Pylibfranka Sim"
 subtitle: "MuJoCo Simulation Twin for pylibfranka"
 short_desc: "A simulation twin for the pylibfranka Python package, enabling seamless real-to-sim transitions for the Franka Research 3."
 order: 2
-icon: "🤖"
 thumb: /assets/images/projects/pylibfranka_thumb.jpg
 github: "https://github.com/omar-mostafa81/pylibfranka_sim"
 tags:

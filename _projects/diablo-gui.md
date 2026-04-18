@@ -3,7 +3,6 @@ title: "Diablo Robot GUI Controller"
 subtitle: "Qt-based GUI for Diablo Robot Control"
 short_desc: "A Qt-based graphical interface for controlling the Diablo 2-wheeled robot, used in SLAM exploration research."
 order: 5
-icon: "🖥️"
 thumb: /assets/images/projects/diablo_gui_thumb.jpg
 github: "https://github.com/omar-mostafa81/diablo-gui-controller"
 tags:

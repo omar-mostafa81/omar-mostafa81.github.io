@@ -3,7 +3,6 @@ title: "D1Py"
 subtitle: "Python Interface for the Unitree D1 Robotic Arm"
 short_desc: "A Python SDK for the Unitree D1 arm built on the unitree_sdk2, enabling easy programmatic control."
 order: 1
-icon: "🦾"
 thumb: /assets/images/projects/d1py_thumb.jpg
 github: "https://github.com/omar-mostafa81/D1Py"
 tags:

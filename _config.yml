@@ -9,8 +9,8 @@ author:
   name: Omar Mostafa
   email: omar.mostafa@nyu.edu
   github: omar-mostafa81
-  linkedin: "https://www.linkedin.com/in/omar-mostafa81"
-  scholar: "https://scholar.google.com/citations?user=YOUR_ID"
+  linkedin: "https://www.linkedin.com/in/omar-mostafa-0633371b6/"
+  scholar: "https://scholar.google.com/citations?hl=en&user=VzHMIyoAAAAJ&view_op=list_works"
 
 # Build settings
 markdown: kramdown
@@ -22,6 +22,10 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+# Include _pages so permalinks for CV / Publications / Projects pages resolve
+include:
+  - _pages
 
 # Collections
 collections:
