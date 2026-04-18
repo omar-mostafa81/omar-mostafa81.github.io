@@ -1,0 +1,52 @@
+# Site Settings
+title: Omar Mostafa
+description: Robotics Engineer & Researcher | NYU Abu Dhabi → NYU Tandon PhD
+url: "https://omar-mostafa81.github.io"
+baseurl: ""
+
+# Author Info
+author:
+  name: Omar Mostafa
+  email: omar.mostafa@nyu.edu
+  github: omar-mostafa81
+  linkedin: "https://www.linkedin.com/in/omar-mostafa81"
+  scholar: "https://scholar.google.com/citations?user=YOUR_ID"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /publications/:name/
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "publication"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

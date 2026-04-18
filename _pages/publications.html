@@ -1,0 +1,35 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+---
+
+<div class="container">
+  <div style="padding: 56px 0;">
+    <h1 class="section-title" style="margin-bottom:8px;">Publications</h1>
+    <p style="color:var(--ink-light);font-size:0.9rem;margin-bottom:40px;">
+      * denotes equal contribution. My name is <strong>bold</strong> in author lists.
+    </p>
+
+    <div class="pub-list">
+      {% assign pubs = site.publications | sort: "year" | reverse %}
+      {% for pub in pubs %}
+      <a href="{{ pub.url | relative_url }}" class="pub-card">
+        <div class="pub-meta">
+          <span class="pub-venue">{{ pub.venue }}</span>
+          <span class="pub-year">· {{ pub.year }}</span>
+        </div>
+        <div class="pub-title">{{ pub.title }}</div>
+        <div class="pub-authors">{{ pub.authors }}</div>
+        {% if pub.tags %}
+        <div class="pub-tags">
+          {% for tag in pub.tags %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>

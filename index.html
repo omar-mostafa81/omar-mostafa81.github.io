@@ -1,0 +1,220 @@
+---
+layout: default
+title: ""
+---
+
+<div class="container">
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div>
+        <img
+          src="{{ '/assets/images/profile/profile.jpg' | relative_url }}"
+          alt="Omar Mostafa"
+          class="hero-photo"
+          onerror="this.outerHTML='<div class=\'hero-photo-placeholder\'>🤖</div>'"
+        >
+      </div>
+      <div>
+        <h1 class="hero-name">Omar Mostafa</h1>
+        <p class="hero-title">Robotics Engineer &amp; Researcher</p>
+
+        <div class="hero-affil">
+          <span class="affil-pill">🎓 NYU Abu Dhabi — B.S. EE, 2026</span>
+          <span class="affil-pill">🔬 PhD Student, NYU Tandon — Fall 2026</span>
+          <span class="affil-pill">🤝 Turing Robotics — Robotics Engineer</span>
+        </div>
+
+        <p class="hero-bio">
+          I am an incoming PhD student in Electrical and Computer Engineering at NYU Tandon School of Engineering,
+          funded by the NYU Abu Dhabi Global PhD Fellowship and supervised by
+          <a href="#" target="_blank">Prof. Fares Abu-Dakka</a>.
+          My research focuses on <strong>physics-aware robot learning</strong>, including contact-rich manipulation,
+          reinforcement learning, and vision-language models for robot policy improvement.
+          I have worked across SLAM-based autonomous exploration, world models for robot planning,
+          and teleoperation systems for multiple robot embodiments.
+        </p>
+
+        <div class="hero-links">
+          <a href="mailto:omar.mostafa@nyu.edu" class="btn btn-primary">✉ Email</a>
+          <a href="https://github.com/omar-mostafa81" target="_blank" class="btn btn-outline">GitHub</a>
+          <a href="{{ site.author.linkedin }}" target="_blank" class="btn btn-outline">LinkedIn</a>
+          <a href="{{ site.author.scholar }}" target="_blank" class="btn btn-outline">Google Scholar</a>
+          <a href="{{ '/assets/Omar_CV.pdf' | relative_url }}" target="_blank" class="btn btn-outline">CV PDF</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── News ── -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">News</h2>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <span class="news-date">Apr 2026</span>
+        <span class="news-text">Admitted to the <strong>NYU Tandon PhD program</strong> in ECE, funded by NYU Abu Dhabi Global PhD Fellowship. Starting Fall 2026 with Prof. Fares Abu-Dakka.</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">Jan 2026</span>
+        <span class="news-text">Joined <strong>Turing Robotics</strong> as a part-time Robotics Engineer, developing a unified teleoperation pipeline for multiple robot embodiments.</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">2025</span>
+        <span class="news-text"><strong>WorldPlanner</strong> accepted at <strong>ICRA 2026</strong> — Monte Carlo Tree Search and MPC with Action-Conditioned Visual World Models.</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">2025</span>
+        <span class="news-text">🥇 <strong>2nd Place</strong> at KUEC Robothon, RoboCup Asia-Pacific — rehabilitation system for back and shoulder support.</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">2025</span>
+        <span class="news-text">🥇 <strong>2nd Place</strong> at Mubadala Higher Education Student Competition — Autonomous Ocean Garbage Collector.</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">2025</span>
+        <span class="news-text">Two papers on <strong>SLAM-based Safe Exploration</strong> accepted at ICARA 2025 and MED 2025.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Publications ── -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Selected Publications</h2>
+      <a href="{{ '/publications/' | relative_url }}" class="section-link">All publications →</a>
+    </div>
+    <div class="pub-list">
+
+      <a href="{{ '/publications/worldplanner/' | relative_url }}" class="pub-card">
+        <div class="pub-meta">
+          <span class="pub-venue">ICRA 2026</span>
+          <span class="pub-year">· 2025</span>
+        </div>
+        <div class="pub-title">WorldPlanner: Monte Carlo Tree Search and MPC with Action-Conditioned Visual World Models</div>
+        <div class="pub-authors">R. Khorrambakht, J. Ortiz-Haro, J. Amigo, <strong>O. Mostafa</strong>, D. Dugas, F. Meier, L. Righetti</div>
+        <div class="pub-tags">
+          <span class="tag">World Models</span>
+          <span class="tag">MCTS</span>
+          <span class="tag">MPC</span>
+          <span class="tag">Robot Manipulation</span>
+        </div>
+      </a>
+
+      <a href="{{ '/publications/slam-safe-exploration/' | relative_url }}" class="pub-card">
+        <div class="pub-meta">
+          <span class="pub-venue">ICARA 2025</span>
+          <span class="pub-year">· 2025</span>
+        </div>
+        <div class="pub-title">SLAM-based Safe Indoor Exploration Strategy</div>
+        <div class="pub-authors"><strong>O. Mostafa</strong>, N. Evangeliou, A. Tzes</div>
+        <div class="pub-tags">
+          <span class="tag">SLAM</span>
+          <span class="tag">Autonomous Exploration</span>
+          <span class="tag">Navigation</span>
+        </div>
+      </a>
+
+      <a href="{{ '/publications/safe-slam-frontier/' | relative_url }}" class="pub-card">
+        <div class="pub-meta">
+          <span class="pub-venue">MED 2025</span>
+          <span class="pub-year">· 2025</span>
+        </div>
+        <div class="pub-title">Safe SLAM Exploration Strategy using Optimal Path Planning towards Frontier Points</div>
+        <div class="pub-authors">N. Evangeliou, <strong>O. Mostafa</strong>, A. Tzes</div>
+        <div class="pub-tags">
+          <span class="tag">SLAM</span>
+          <span class="tag">Frontier Exploration</span>
+          <span class="tag">Path Planning</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ── Experience ── -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Experience</h2>
+    </div>
+    <div class="exp-list">
+
+      <div class="exp-item">
+        <span class="exp-date">Jan 2026 – Present</span>
+        <div>
+          <div class="exp-role">Robotics Engineer (Part-time)</div>
+          <div class="exp-org">Turing Robotics · Dubai, UAE</div>
+          <div class="exp-desc">Developing a unified teleoperation pipeline for multiple robot embodiments.</div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <span class="exp-date">Aug 2025 – Present</span>
+        <div>
+          <div class="exp-role">Research Assistant</div>
+          <div class="exp-org">Robot Learning &amp; Control Lab, NYU Abu Dhabi · Abu Dhabi, UAE</div>
+          <div class="exp-desc">Developed a simulation twin for pylibfranka in MuJoCo. Investigating VLMs for guiding RL agents in contact-rich manipulation with physics-aware policy improvements.</div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <span class="exp-date">Jan 2025 – Aug 2025</span>
+        <div>
+          <div class="exp-role">Research Intern</div>
+          <div class="exp-org">Machines in Motion Lab, NYU Tandon · New York, NY</div>
+          <div class="exp-desc">System identification for the Unitree Go2 to reduce Sim2Real gap. Developed Python interface for the Unitree D1 arm. Trained world models for object pose tracking applied to the Franka arm.</div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <span class="exp-date">Sep 2023 – Oct 2025</span>
+        <div>
+          <div class="exp-role">Research Assistant</div>
+          <div class="exp-org">Center for AI &amp; Robotics, NYU Abu Dhabi · Abu Dhabi, UAE</div>
+          <div class="exp-desc">SLAM-based autonomous exploration and safe navigation using the Diablo robot. Sensor fusion with RGB-D and LiDAR. Two publications at ICARA 2025 and MED 2025.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Skills ── -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Skills &amp; Tools</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <div class="skill-group-title">Programming</div>
+        <div class="skill-tags">
+          <span class="tag">Python</span><span class="tag">C/C++</span><span class="tag">PyTorch</span>
+          <span class="tag">MATLAB</span><span class="tag">VHDL</span><span class="tag">LaTeX</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Robotics</div>
+        <div class="skill-tags">
+          <span class="tag">ROS 1/2</span><span class="tag">MuJoCo</span><span class="tag">Isaac Sim</span>
+          <span class="tag">Gazebo</span><span class="tag">RTAB-Map</span><span class="tag">Nav2</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Robots Worked With</div>
+        <div class="skill-tags">
+          <span class="tag">Diablo</span><span class="tag">Unitree Go2</span><span class="tag">Franka FR3</span>
+          <span class="tag">H1 Humanoid</span><span class="tag">Tiago++</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">EDA &amp; Hardware</div>
+        <div class="skill-tags">
+          <span class="tag">Cadence</span><span class="tag">Altium Designer</span>
+          <span class="tag">Arduino</span><span class="tag">PLC</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>

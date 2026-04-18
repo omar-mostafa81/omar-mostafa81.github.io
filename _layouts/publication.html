@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<div class="container">
+  <div class="pub-detail">
+
+    <div class="breadcrumb">
+      <a href="{{ '/publications/' | relative_url }}">← Publications</a>
+    </div>
+
+    <div class="pub-detail-venue">{{ page.venue }} · {{ page.year }}</div>
+    <h1 class="pub-detail-title">{{ page.title }}</h1>
+    <p class="pub-detail-authors">{{ page.authors }}</p>
+
+    <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:28px;">
+      {% if page.paper_url %}
+        <a href="{{ page.paper_url }}" target="_blank" class="btn btn-primary">
+          📄 Read Paper
+        </a>
+      {% endif %}
+      {% if page.arxiv %}
+        <a href="{{ page.arxiv }}" target="_blank" class="btn btn-outline">arXiv</a>
+      {% endif %}
+      {% if page.code %}
+        <a href="{{ page.code }}" target="_blank" class="btn btn-outline">Code</a>
+      {% endif %}
+    </div>
+
+    {% if page.abstract %}
+    <div class="pub-detail-abstract">
+      {{ page.abstract }}
+    </div>
+    {% endif %}
+
+    {% if page.images %}
+    <div class="pub-detail-images">
+      {% for img in page.images %}
+        <div>
+          <img src="{{ img.src | relative_url }}" alt="{{ img.caption }}"
+               onerror="this.parentElement.innerHTML='<div class=\'pub-img-placeholder\'>{{ img.caption }}</div>'">
+          {% if img.caption %}<p style="font-size:0.78rem;color:var(--ink-light);margin-top:6px;text-align:center;">{{ img.caption }}</p>{% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {{ content }}
+
+  </div>
+</div>
