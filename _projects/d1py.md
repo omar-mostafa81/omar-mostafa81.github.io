@@ -11,7 +11,7 @@ tags:
   - Robotic Arm
   - SDK
 images:
-  - src: /assets/images/projects/d1py_arm.jpg
+  - src: /assets/images/projects/d1py_arm.png
     caption: "Unitree D1 Arm on the Go2 quadruped"
 ---
 
