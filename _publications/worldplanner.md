@@ -18,9 +18,9 @@ abstract: >
   the MCTS plan with a custom reward combining plan-following and action regularization. Accepted at ICRA 2026 and the
   World Modeling Workshop (Mila, Montreal).
 images:
-  - src: /assets/images/publications/worldplanner_mcts.jpg
+  - src: /assets/images/publications/worldplanner_mcts.png
     caption: "MCTS planning for the push-T task"
-  - src: /assets/images/publications/worldplanner_mpc.jpg
+  - src: /assets/images/publications/worldplanner_mpc.png
     caption: "MPC execution on the Franka arm"
 ---
 
