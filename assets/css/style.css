@@ -364,6 +364,28 @@ p { color: var(--ink-mid); }
   background: linear-gradient(135deg, #e7eef5, #d2dee9);
 }
 
+.project-card-locked {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: not-allowed;
+  opacity: 0.95;
+}
+
+.project-thumb.is-locked {
+  background: linear-gradient(135deg, #eef1f5, #dbe2ea);
+  color: var(--ink-light);
+}
+
+.project-nda {
+  font-size: 0.78rem;
+  color: var(--accent2);
+  margin-bottom: 12px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
 .project-thumb img {
   width: 100%;
   height: 160px;

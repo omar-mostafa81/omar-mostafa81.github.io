@@ -14,23 +14,46 @@ permalink: /projects/
     <div class="project-grid">
       {% assign projs = site.projects | sort: "order" %}
       {% for project in projs %}
-      <a href="{{ project.url | relative_url }}" class="project-card">
-        <div class="project-thumb">
-          <img src="{{ project.thumb | relative_url }}" alt="{{ project.title }}"
-               onerror="this.parentElement.classList.add('is-empty'); this.remove();">
-        </div>
-        <div class="project-body">
-          <div class="project-title">{{ project.title }}</div>
-          <div class="project-desc">{{ project.short_desc }}</div>
-          {% if project.tags %}
-          <div class="pub-tags">
-            {% for tag in project.tags %}
-              <span class="tag">{{ tag }}</span>
-            {% endfor %}
+        {% if project.confidential %}
+          <div class="project-card project-card-locked" aria-disabled="true">
+            <div class="project-thumb is-locked">
+              <svg class="lock-icon" viewBox="0 0 24 24" width="44" height="44" aria-hidden="true">
+                <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                      d="M7 10V7a5 5 0 0 1 10 0v3M6 10h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1Zm6 4v3"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-title">{{ project.title }}</div>
+              <div class="project-desc">{{ project.short_desc }}</div>
+              <div class="project-nda">Under NDA &mdash; details cannot be shared publicly.</div>
+              {% if project.tags %}
+              <div class="pub-tags">
+                {% for tag in project.tags %}
+                  <span class="tag">{{ tag }}</span>
+                {% endfor %}
+              </div>
+              {% endif %}
+            </div>
           </div>
-          {% endif %}
-        </div>
-      </a>
+        {% else %}
+          <a href="{{ project.url | relative_url }}" class="project-card">
+            <div class="project-thumb">
+              <img src="{{ project.thumb | relative_url }}" alt="{{ project.title }}"
+                   onerror="this.parentElement.classList.add('is-empty'); this.remove();">
+            </div>
+            <div class="project-body">
+              <div class="project-title">{{ project.title }}</div>
+              <div class="project-desc">{{ project.short_desc }}</div>
+              {% if project.tags %}
+              <div class="pub-tags">
+                {% for tag in project.tags %}
+                  <span class="tag">{{ tag }}</span>
+                {% endfor %}
+              </div>
+              {% endif %}
+            </div>
+          </a>
+        {% endif %}
       {% endfor %}
     </div>
   </div>
